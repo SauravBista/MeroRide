@@ -294,7 +294,6 @@
         );
       }
 
-      /* Buddha eyes background for contact section */
       .contact-section {
         background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-dark) 100%);
         position: relative;
@@ -303,17 +302,10 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cg opacity='0.03' fill='%23ffffff'%3E%3Ccircle cx='120' cy='120' r='45' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Ccircle cx='280' cy='120' r='45' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Cpath d='M75 120 Q 120 140 165 120' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cpath d='M235 120 Q 280 140 325 120' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cpath d='M75 120 Q 120 100 165 120' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cpath d='M235 120 Q 280 100 325 120' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3Ccircle cx='120' cy='120' r='8' fill='%23ffffff'/%3E%3Ccircle cx='280' cy='120' r='8' fill='%23ffffff'/%3E%3Cpath d='M180 160 Q 200 180 220 160' fill='none' stroke='%23ffffff' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
-        background-size: 600px 400px;
-        background-position: center center;
-        background-repeat: no-repeat;
         pointer-events: none;
         z-index: 1;
       }
-      .contact-section > * {
-        position: relative;
-        z-index: 2;
-      }
+      
 
       /* Professional cards */
       .professional-card {
@@ -330,27 +322,7 @@
         border-color: rgba(26, 35, 126, 0.4);
       }
 
-      /* Enhanced professional cards */
-      .premium-card {
-        background: linear-gradient(
-          135deg,
-          var(--glass-light),
-          var(--glass-medium)
-        );
-        backdrop-filter: blur(30px);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px rgba(5, 8, 21, 0.2);
-      }
-      .premium-card:hover {
-        background: linear-gradient(
-          135deg,
-          var(--glass-medium),
-          var(--glass-strong)
-        );
-        transform: translateY(-12px);
-        box-shadow: 0 20px 60px rgba(5, 8, 21, 0.3);
-        border-color: rgba(255, 255, 255, 0.25);
-      }
+      
 
       /* Text colors */
       .text-navy-primary {
@@ -618,7 +590,8 @@
 }
 
 /* Form and Card Styling */
-.premium-card {
+/* Enhanced professional cards */
+      .premium-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(4px);
@@ -629,13 +602,12 @@
 .premium-card select {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--text-primary);
   transition: all 0.3s ease;
 }
 
 .premium-card input::placeholder,
 .premium-card textarea::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
 }
 
 .premium-card input:focus,
